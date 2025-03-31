@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrapShit</title>
+    <style>
+        @keyframes rgbEffect {
+            0% { color: red; }
+            33% { color: green; }
+            66% { color: blue; }
+            100% { color: red; }
+        }
+
+        @keyframes rgbBackground {
+            0% { background-color: rgba(255, 0, 0, 0.1); }
+            33% { background-color: rgba(0, 255, 0, 0.1); }
+            66% { background-color: rgba(0, 0, 255, 0.1); }
+            100% { background-color: rgba(255, 0, 0, 0.1); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(240, 240, 240, 1);
+            text-align: center;
+            animation: rgbBackground 5s infinite;
+        }
+
+        .navbar {
+            background-color: rgba(40, 40, 40, 0.9);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+            animation: rgbEffect 3s infinite;
+        }
+
+        .navbar .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar button {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar button:hover {
+            background-color: rgba(200, 200, 200, 0.9);
+        }
+
+        .section {
+            padding: 100px 20px;
+            display: none;
+        }
+
+        #inicio {
+            display: block;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(40, 40, 40, 0.9);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">TrapShit</div>
+        <div class="buttons">
+            <button onclick="mostrarSeccion('inicio')">Inicio</button>
+            <button onclick="mostrarSeccion('informacion')">Información</button>
+            <button onclick="mostrarSeccion('redireccion')">Redirigir</button>
+        </div>
+    </div>
+
+    <div id="inicio" class="section">
+        <h1>Bienvenido a TrapShit</h1>
+        <p>Somos una página dedicada a la cultura del rap y el drill.</p>
+        
+        <h2>Proposito</h2>
+        <p>Nuestro proposito es dar a conocer y dar aun mas reconocimiento a estos famosos raperos que han dejado una huella en sus respectivos generos y en sus audiencia, y tambien para que otras personas que no tienen conocimiento de quienes son, o los conozcan.</p>
+
+        <h3>Nuestro futuro</h3>
+        <p>El futuro de esta pagina es creecer tanto en informacion como en audiencia para que mas gente conozca a estos raperos y su leyenda y carrera musical, sean eternas.</p>
+
+        <h4>Imagenes respectivas de los raperos que estan en la pagina por el momento</h4>
+        <img src="https://images.steamusercontent.com/ugc/50198202370602765/25CD5CA3306E374C0187836B688D705015E864FB/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt>"King Von"
+        <img src="https://i.kym-cdn.com/photos/images/newsfeed/002/295/299/0d8.gif" alt>"Kanye west"
+
+        <h5>¿Discografia de King Von?</h5>
+        <p>Álbumes de estudio
+            Welcome to O'Block (30 de octubre de 2020)
+            
+            Mixtapes
+            Grandson, Vol. 1 (19 de septiembre de 2019)
+            
+            Levon James (6 de marzo de 2020)
+            
+            Álbumes póstumos
+            What It Means to Be King (4 de marzo de 2022)
+            
+            EPs
+            King Von & Sada Baby - Freshman on Varsity (2023, póstumo)
+            
+            Singles más populares
+            "Crazy Story" (2018)
+            
+            "Crazy Story 2.0" (con Lil Durk) (2019)
+            
+            "Crazy Story Pt. 3" (2019)
+            
+            "Took Her to the O" (2020)
+            
+            "Why He Told" (2020)
+            
+            "How It Go" (2020)
+            
+            "I Am What I Am" (con Fivio Foreign) (2020)
+            
+            "Armed & Dangerous" (2021, póstumo)
+            
+            "Don’t Play That" (con 21 Savage) (2022, póstumo)</p>
+            <h6>Discografia de Kanye West</h6>
+            <p>Álbumes de estudio
+                The College Dropout (2004)
+                
+                Late Registration (2005)
+                
+                Graduation (2007)
+                
+                808s & Heartbreak (2008)
+                
+                My Beautiful Dark Twisted Fantasy (2010)
+                
+                Yeezus (2013)
+                
+                The Life of Pablo (2016)
+                
+                Ye (2018)
+                
+                Jesus Is King (2019)
+                
+                Donda (2021)
+                
+                Vultures 1 (con Ty Dolla $ign, 2024)
+                
+                Álbumes colaborativos
+                Watch the Throne (con Jay-Z) (2011)
+                
+                Kids See Ghosts (con Kid Cudi, bajo el grupo del mismo nombre) (2018)
+                
+                Mixtapes (Tempranos)
+                Get Well Soon... (2002)
+                
+                I'm Good (2003)
+                
+                Freshmen Adjustment (2003)
+                
+                Freshmen Adjustment 2 (2005)
+                
+                Freshmen Adjustment 3 (2006)
+                
+                Compilaciones y Álbumes en vivo
+                Cruel Summer (2012) (Con GOOD Music)
+                
+                VH1 Storytellers (2009)
+                
+                Álbumes inacabados o descartados
+                Good Ass Job (cancelado, evolucionó en MBDTF)
+                
+                Turbo Grafx 16 (mencionado en 2016, nunca lanzado)
+                
+                Yandhi (cancelado, algunas canciones terminaron en "Jesus Is King")
+                
+                Donda 2 (lanzado de forma limitada en 2022 a través del Stem Player, nunca lanzado oficialmente en streaming)</p>
+    
+    </div>
+
+    </div>
+
+    <div id="informacion" class="section">
+        <h1>Información sobre los Raperos</h1>
+        <h2>King Von</h2>
+        <img src="https://i.imgur.com/LeixTC5.png" alt="King Von">
+        <p><strong>Dayvon Daquan Bennett</strong>, conocido como <strong>King Von</strong>, nació el 9 de agosto de 1994 en Chicago, Illinois. Fue un rapero emergente en la escena del drill y firmó con el sello <strong>Only the Family (OTF)</strong> de Lil Durk.</p>
+        <p>Se hizo famoso por su estilo narrativo en canciones como <em>"Crazy Story"</em> y <em>"Took Her to the O"</em>. Su carrera fue corta pero impactante, ya que falleció trágicamente en un tiroteo el 6 de noviembre de 2020 en Atlanta, Georgia.</p>
+        
+        <h2>Kanye West</h2>
+        <img src="https://i.imgur.com/ZCC4XlJ.png" alt="Kanye West">
+        <p><strong>Kanye West</strong> es uno de los raperos y productores más influyentes en la historia del hip-hop. Ha lanzado múltiples álbumes aclamados como <em>"The College Dropout"</em>, <em>"My Beautiful Dark Twisted Fantasy"</em> y <em>"Donda"</em>.</p>
+        <p>Sin embargo, en los últimos años ha estado envuelto en controversias debido a declaraciones polémicas, incluyendo comentarios antisemitas que resultaron en la pérdida de múltiples contratos comerciales.</p>
+    </div>
+
+
+
+    <div id="redireccion" class="section">
+        <h1>Redirecciones a los canales de youtube de los Artistas</h1>
+        <button onclick="window.location.href='https://www.youtube.com/@kanyewest';">Ir al canal de Kanye West</button>
+        <button onclick="window.location.href='https://www.youtube.com/channel/UC47kJWRBD-NREBvmBg5kWeA';">Ir al canal de King Von</button>
+        <h2>¿De que sirve esto?</h2>
+        <p>Esto sirve para que los que entren aqui puedan dirigirse a los canales de estos artistas y conocer mas sobre ellos.</p>
+        <h3>¿Que encontraras?</h3>
+        <p>Aqui encontraras todos los videos musicales y canciones subidas hasta la fecha por los artistas y tambien informacion importante sobre ellos, esto se puso ya que en youtube se pueden encontrar mas cosas sobre ellos</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 TrapShit. Todos los derechos reservados a sus respectivos autores.</p>
+    </div>
+
+    <script>
+        function mostrarSeccion(seccion) {
+            let secciones = document.querySelectorAll('.section');
+            secciones.forEach(sec => sec.style.display = 'none');
+            document.getElementById(seccion).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
